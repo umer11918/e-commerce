@@ -5,6 +5,8 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 const mongoose = require('mongoose');
+
+const PORT = process.env.PORT || 5000 ;
 require("./db/config");
 
 const User = require("./db/user");
@@ -232,6 +234,6 @@ app.get("/cart", verifyToken, async (req, res) => {
 });
 
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log('Server is running on port 5000');
 });
