@@ -1,0 +1,758 @@
+.App {
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  background-color: skyblue;
+  font-weight: 700;
+}
+
+.logo {
+  display: flex;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  z-index: 1001;
+}
+
+.nav-ul {
+  display: flex;
+  padding: 5px;
+  background-color: transparent;
+  list-style-type: none;
+  margin-left: auto;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.nav-ul li {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  /* For dropdown positioning */
+}
+
+.nav-ul a {
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-ul a:hover {
+  color: #fff;
+}
+
+.nav-ul a:hover {
+  color: #fff;
+}
+
+.nav-right {
+  display: flex;
+  /* Ensure nav items are aligned correctly */
+  align-items: center;
+  margin-left: auto;
+  /* Push the nav items to the end */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  /* Adjust as needed */
+  background-color: white;
+  border: 1px solid #ddd;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1002;
+}
+
+.dropdown-menu li {
+  padding: 5px;
+}
+
+.profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0 6px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.active {
+  color: #fff;
+}
+
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center items horizontally */
+  width: auto; /* Adjust width as needed */
+  color: #000;
+  margin-left: auto; /* Pushes the logout button to the end */
+  right: 150px;
+}
+
+.logout a {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none; 
+  margin: 0px 100px;
+  
+}
+.logout a:hover{
+  color: #fff;
+}
+
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid skyblue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  margin-left: 8px;
+  object-fit: cover;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+
+}
+.profile-image :hover {
+  width: 60px; /* Increased size on hover */
+  height: 60px; /* Increased size on hover */
+  opacity: 0.8; /* Slightly transparent on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+
+}
+
+
+
+.nav-item :hover {
+  color: #fff;
+}
+
+.dropdown-trigger :hover {
+  color: #fff;
+}
+
+.dropdown-trigger svg {
+  margin-left: 5px;
+}
+
+.active {
+  color: #fff;
+}
+
+.nav-right {
+  margin-left: auto;
+  /* Push the nav items to the end */
+}
+
+
+.active {
+  color: #fff;
+}
+
+.nav-ul li a.active {
+  color: #fff;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.active {
+  color: #fff;
+}
+
+.nav-ul li a.active {
+  color: #fff;
+}
+
+.main-content {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.form {
+  display: grid;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form input {
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+  border-radius: 10px;
+  border-color: skyblue;
+  border-style: solid;
+  border-width: 2px;
+  font-weight: 700;
+}
+
+.form input:hover {
+  background: #e3dfdf;
+  border-color: #d5d7d8;
+}
+
+.form input:focus {
+  border-color: #393a3a;
+  outline: none;
+
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Profile.css */
+.profile-container {
+  /* max-width: 800px; */
+  padding: 20px;
+  background: #f4f4f9;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.profile-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.profile-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-item {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+  text-align: center;
+  width: 100%;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #555;
+  width: 20%;
+  align-items: flex-start;
+  display: flex;
+}
+
+.info-value {
+  font-size: 1rem;
+  color: #666;
+  width: 70%;
+  align-items: flex-start;
+  display: flex;
+  text-align: center;
+}
+
+.image-gallery {
+  display: flex;
+  /* justify-content: center; */
+  text-align: center;
+  align-items: flex-start;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+
+.input-container {
+  align-items: flex-start;
+  width: 50%;
+  margin-left: -50px;
+  flex-direction: row;
+}
+
+.input-container input {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid skyblue;
+}
+
+.input-container .error {
+  color: red;
+  margin-left: 12px;
+}
+
+.input-container input:hover {
+  background: #e3dfdf;
+  border-color: #d5d7d8;
+}
+
+.input-container input:focus {
+  border-color: #626363;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  border-radius: 10px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 2px;
+  height: 50px;
+  background-color: skyblue;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-weight: 800;
+}
+
+button:hover {
+  background-color: skyblue;
+  border-color: skyblue;
+  color: #000000;
+
+}
+
+button:focus {
+  outline: none;
+}
+
+.product-list {
+  margin-top: 60px;
+  align-items: center;
+  padding: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 100px;
+
+}
+
+.pro_head {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* width: 300px;  */
+}
+
+.search {
+  border: 1px solid skyblue;
+  border-radius: 20px;
+  height: 40px;
+  width: 100%;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+.product-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.product-list ul li {
+  display: flex;
+  flex-direction: row;
+  /* Align children in a column */
+  align-items: center;
+  /* Center items horizontally */
+  justify-content: space-evenly;
+  /* Center items vertically */
+  width: 100px;
+  border: 1px solid skyblue;
+  padding: 5px;
+  height: 50px;
+  text-align: center;
+}
+
+.list {
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.btn_view_more {
+  width: 30px;
+  font-size: 15px;
+  height: 30px;
+  margin: 5px
+}
+
+.icon_btn {
+  width: 30px;
+  font-size: 10px;
+  font-style: none;
+  height: 30px;
+  background-color: skyblue;
+  border: 1px solid skyblue;
+}
+
+.footer {
+  align-items: flex-end;
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  background-color: skyblue;
+}
+
+
+
+
+
+
+
+.main {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+
+  .product-item {
+    position: relative;
+    display: inline-block;
+  }
+
+  .ac {
+    width: 100px;
+    height: 20px;
+    background: red;
+  }
+
+  .product-images {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .product-images img {
+
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+  }
+
+  .product-images button {
+    width: 80px;
+    height: 40px;
+  }
+
+  .product-images img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    transition: opacity 0.3s ease;
+  }
+
+  .product-images .hover-overlay {
+    position: absolute;
+    top: 16;
+    left: 16;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(255, 255, 255, 0.5); */
+    color: rgb(94, 89, 89);
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.0001s ease;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-item:hover .hover-overlay {
+    opacity: 1;
+    margin-bottom: 160px;
+    opacity: 2;
+  }
+
+  .product-item:hover img {
+    opacity: 0.3;
+    margin-bottom: 10px;
+    margin-top: -10px;
+  }
+
+
+}
+
+.abc {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 95%;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+
+  div {
+    display: flex;
+    font-family: serif;
+    font-size: 20px;
+    justify-content: space-around;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  .button-add-to-cart {
+    color: #ffffff;
+    background: skyblue;
+    border: 1px solid skyblue;
+    transition: all 0.3;
+    font-size: 14px;
+    margin-right: 15px;
+    
+  }
+  .button-add-to-cart :hover{
+    background-color: #fff;
+    color: skyblue;
+  }
+
+  p {
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+  }
+
+  p span {
+    color: red;
+    margin-left: 40px;
+  }
+}
+
+.input {
+  width: 50px;
+  border-radius: 7px;
+  margin-right: 20px;
+  height: 25px;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+  font-size: large;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    right: 80px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .nav-ul {
+    display: none;
+    /* Hide menu by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    /* Adjust according to navbar height */
+    left: 0;
+    width: 100%;
+    /* Span full width for initial hidden state */
+    background-color: skyblue;
+    padding: 20px;
+    z-index: 1000;
+    /* Ensure it appears above other elements */
+  }
+
+  /* Navigation List when active */
+  .nav-ul.active {
+    display: flex;
+    /* right: 0; */
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    left: auto;
+    margin-right: 75px;
+    color: #000;
+    position: absolute;
+    top: 19px;
+  }
+
+  .nav-ul li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .nav-ul li a {
+    color: rgb(8, 7, 7);
+    text-align: center;
+    background-color: skyblue;
+    /* Center text in nav items */
+  }
+
+  .nav-ul li a :active {
+    color: white;
+    /* Center text in nav items */
+  }
+
+
+  .product-ul {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 0;
+    padding: 0px;
+    height: 430px;
+    width: 30px;
+    margin-right: 200px;
+  }
+
+  .product-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-list ul li {
+    display: flex;
+    /* width: 80px; */
+    font-size: 16px;
+    font-weight: 500;
+
+  }
+
+  .dropdown-menu {
+    RIGHT: 0px;
+  }
+}

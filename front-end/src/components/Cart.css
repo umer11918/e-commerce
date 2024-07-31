@@ -1,0 +1,129 @@
+.cart {
+    margin-top: 70px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 800px;
+}
+
+.cart h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px; /* Increase font size for better readability */
+}
+
+.cart div {
+    width: 100%;
+}
+
+.cart-item-header, .cart-item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.cart-item-header li, .cart-item-details li {
+    flex: 1;
+    text-align: center;
+}
+
+.cart-item-header li h4 {
+    color: #555;
+    font-size: 16px;
+    margin: 0;
+}
+
+.cart-item-details img {
+    border-radius: 5px;
+}
+
+.cart-item-details p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.cart-item-details p:first-of-type {
+    font-weight: bold;
+}
+
+h4 {
+    margin: 10px 0;
+}
+
+.cart-item {
+    /* display: flex; */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px; /* Add padding for spacing inside each item */
+    border-bottom: 1px solid #ddd; 
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  
+    width: 90%;  
+}
+
+.cart-item:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+.cart-item ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    align-items: center;
+
+    img{
+        border-radius: 10px;
+    }
+}
+
+.cart-item ul li {
+    text-align: center; /* Center text within each list item */
+    
+    text-align: center;
+    width: 90px;
+    align-items: center;
+    display: flex;
+}
+
+.cart-item ul a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.cart-item ul a:hover {
+    color: #0056b3; /* Darker link color on hover */
+}
+.checkout{
+    position: relative;
+width: 90%;
+.checkout-button{
+    width: 100px;
+    background-color: white;
+    border: 1PX solid skyblue;
+    top: 40px;
+    position: absolute;
+    right:40PX;
+    color: skyblue;
+    font-weight: 900;
+    font-size: 16px;
+   }
+   .checkout-button:hover{
+    background-color: skyblue;
+    color: #ffff;
+   }
+}
